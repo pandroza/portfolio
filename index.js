@@ -44,16 +44,16 @@ iEls[5].className = iconArr[s3];
   var pageNames = ["John Peel Tribute Page", "Guitar Lessons Page", "Bike Shop Page","Random Quote Generator ","React Music Creator", "5O US States Game","Survey Page","Technical Document","Floaty Octocat","This Page"];
           var pageInfo = ["Made with HTML, CSS and JavaScript. A tribute page to the influential DJ John Peel. It has a choice of animated backgrounds, some interactive, created with <a id=\"link1\" href = \"https://css-doodle.com/\">CSS-Doodle.</a> Click 'change theme' and background and styles change. Site is responsive and mobile friendly. Site layout changes on different screen sizes. Also contain selection of links to related YouTube content which you can play inside site.","Made with HTML, CSS, and JavaScript. Static site for imaginary guitar lessons business. Site header is animated music notes background created on <a id=\"link1\" href = \"https://css-doodle.com/\">CSS-Doodle</a>, with multiple headings of important info fading in and out. Site responsive and mobile friendly. Site layout changes on different screen sizes. Uses Bootstrap for responsive Nav-Bar and carousel of customer reviews. Has iFrame for potential YouTube content.","Made with HTML, CSS, JavaScript and Bootstrap. A static site for an imaginary Bike Repair company. Background is gallery of stylish images each with bold headings of business's main selling points. Responsive and mobile friendly. Site layout changes on different screen sizes. Uses Bootstrap to create responsive Nav-bar and carousel of customer reviews. Contain's iFrame of YouTube video for business's potential video content.","Made with React, Sass and Bootstrap. A stylised random quote generator for socialist politician and activist Alexandria Ocasio-Cortez aka AOC. Quotes can be Tweeted. Design is based on AOC's posters and uses skewed angles. Has two Bootstrap Carousels, one for the quote and the other for author name, overlayed on each other. CSS-Doodle background.","Made with React. A mini music creator where you can make songs from a large list of different SFX and drum beats. Song can be composed using up to 18 of the samples. Uses a drag and drop API so user can click and drag samples they want in song. Has a compact design where a whole track is contained on one screen. This is an ongoing project which I'm planning to add more features to and make a large as I can.","Made with HTML, CSS and JQuery. A simple word game. You must unscramble and type the names of all 50 U.S states in the time limit. States you must guess are in random order.","Made with HTML, CSS and JavaScript. An example of a survey form made on freeCodeCamp. Has name, number, email, checkboxes and text input fields with HTML5 validation. Site Responsive and mobile friendly. Has clickable <a id=\"link1\" href = \"https://css-doodle.com/\">CSS-Doodle</a> background.","Made with HTML and CSS. An example of a technical document made on freeCodeCamp. Responsive and mobile friendly. Nav-bar switches from top to side positioning based on screen size.", "Made with JavaScript using P5JS library. A simple side scroller game based on Flappy Bird, featuring github mascot Octocat. In this game, you guide Octocat through checkpoints going up, down and left-to-right, and collect 'github coins' Click play button to start.","Made with HTML, CSS and JavaScript. Site is mobile first and responsive. The header has a HH/MM/SS clock that uses <a id=\"link1\" href = \"https://fontawesome.com/\">FontAwesome</a>  Icons. The images are displayed in the projects section using <a id=\"link1\" href = \"https://oxism.com/hexaflip/\">Hexaflip</a> plugin. On large screen has CSS-Doodle background of FontAwesome icons."];
           var pageLinks = ["https://www.pandroza.net/john-peel/", "https://www.pandroza.net/guitar-lessons/", "https://www.pandroza.net/bike-shop/","https://codepen.io/pandroza/pen/WNpQqmr","https://codepen.io/pandroza/pen/PopjrQg?editors=1100","https://codepen.io/pandroza/pen/abpLboP","https://codepen.io/pandroza/full/YzGbyyj","https://codepen.io/pandroza/full/eYBVvby","https://editor.p5js.org/ross.mcinerney82/sketches/ckqmGj-Tt", ""];
-var images = ['./FA-icons/johnpeel5.png',
-                './FA-icons/guitar-screenshot.png',
-                './FA-icons/bikes3.png',
-                './FA-icons/aocquote.png',
-                './FA-icons/musiccreator.png',
-                './FA-icons/canyon.png',
-                './FA-icons/survey.png',
-                './FA-icons/technic.png',
-                './FA-icons/octocat(2).png',
-                './FA-icons/thispage.png'
+var images = ['./hex-pics/johnpeel5.png',
+                './hex-pics/guitar-screenshot.png',
+                './hex-pics/bikes3.png',
+                './hex-pics/aocquote.png',
+                './hex-pics/musiccreator.png',
+                './hex-pics/canyon.png',
+                './hex-pics/survey.png',
+                './hex-pics/technic.png',
+                './hex-pics/octocat(2).png',
+                './hex-pics/thispage.png'
             ];
 var myHex;
 var c = 0;

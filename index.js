@@ -52,7 +52,7 @@ var images = ['./hex-pics/johnpeel5.png',
                 './hex-pics/canyon.png',
                 './hex-pics/survey.png',
                 './hex-pics/technic.png',
-                './hex-pics/octocat(2).png',
+                './hex-pics/floaty-octocat.png',
                 './hex-pics/thispage.png'
             ];
 var myHex;

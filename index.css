@@ -1,0 +1,517 @@
+html { height: 100%; 
+font-size: 10px;}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+  background:cornflowerblue;
+    font-weight: 300;
+    text-align:center;
+    color: #333;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.demo {
+  margin: 0 auto;
+  -webkit-filter: drop-shadow(30px 30px 23px rgba(0,0,0,0.3));
+  -moz-filter: drop-shadow(30px 30px 23px rgba(0,0,0,0.3));
+  filter: drop-shadow(30px 30px 23px rgba(0,0,0,0.3));
+}
+
+
+
+/*MY CODE*/
+
+/*CSS-DOODLE*/
+.my-doodle {
+    display:none;
+  position: fixed;
+  background:cornflowerblue;
+  z-index: -1;
+   
+  --rule1: (
+        @grid: 5 / 100vmax;
+     @nth(3, 6n) {
+   background: url("https://assets.codepen.io/5499329/ghost.svg");
+}
+   
+    @nth(6n + 1) {
+  background: url("https://assets.codepen.io/5499329/book-dead-solid.svg");
+}
+  @nth(11, 6n + 2) {
+  background: url("https://assets.codepen.io/5499329/meteor-solid.svg");
+}
+  @nth(15, 6n + 4) {
+  background: url("https://assets.codepen.io/5499329/pastafarianism-solid.svg");
+}
+  @nth(5, 9, 17, 21, 23) {
+  background: url("https://assets.codepen.io/5499329/yin-yang-solid.svg");
+}
+    background-size: cover;
+     @size: @r(4vmax, 5vmax);
+   /* clip-path: polygon(
+        @rand(50%) 0, 50% @rand(70%), 0 @rand(100%)
+    );*/
+    animation: test infinite @r(100s, 150s) linear;
+     
+    @keyframes test {
+       0% {
+            opacity: 0;
+        }
+        4% {opacity:0;
+            transform: translate3d(@r(150px), @r(200px), 0) rotate(@r(360deg));
+        }
+      7% {
+            opacity: @r(0.2, 0.6);
+        }
+        50% {
+            transform: translate3d(@r(-500%, 1000%), @r(-500%, 1000%), 0);
+        }
+      98% {
+            opacity: @r(0.2, 0.6);
+        }
+        100% {
+          opacity:0;
+            transform: translate3d(@r(150px), @r(200px), 0) rotate(@r(360deg));
+       }
+  }
+);
+}
+/*Loader*/
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -56px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #8bb0f4;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+/*Navbar*/
+.navbar, .navbar-brand {
+  font-family: 'Indie Flower', cursive;
+}
+/*Welcome screen*/
+h1, h2, h3 {
+  font-family:'Indie Flower', cursive;
+   font-weight:600;
+}
+.navbar, #header-img {
+  font-weight:600;
+  font-size: 2.5rem;
+}
+/*Background-colors*/
+#projects {
+  background-color:hotpink;
+}
+#welcome-section, #footer-text, #footer-foot {
+   background:radial-gradient(ellipse at 48% 42%, rgba(139, 176, 244, 1) 0%, rgba(139, 176, 244, 1) 50%, rgba(100, 148, 237, 1) 100%);
+}
+/*Colors*/
+h1, #about-heading, #lets, span,  a.profile-links:hover, a.site-links:hover {
+  color:#fff;
+}
+#welcome-section, a.profile-links, #em, #tel {
+  color:#333;
+}
+a#links a.site-links {
+  color:blue;
+}
+i#icon1:hover, #icon2:hover, a#links:hover {
+   color:cornflowerblue;
+}
+/*Font-sizes*/
+h1, #about-heading {
+  font-size:2rem;
+}
+h2, h3, #links {
+  font-size:1.5rem;
+}
+span#email-text, h3#by {
+  letter-spacing: 4px;
+}
+#page-para, #about-para {
+  font-size:1.6rem;
+}
+i#icon1, i#icon2 {
+  font-size: 3.5rem;
+}
+#welcome-section {
+  padding: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height:100vh;
+  text-align: center;
+}
+h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+h1, h2, h3 {
+  letter-spacing: 10px;
+  
+  text-transform: uppercase;
+}
+h2#top-heading, h2#top-heading2, h2#about-heading, h3#lets {
+  letter-spacing: 5px;
+  
+}
+/*FONTS CLOCK*/
+#clock {
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px 40px 40px;
+  justify-content: center;
+  grid-gap: 5px;
+}
+/*CLOCK ICONS*/
+i#icon {
+  font-size: 2.5rem;
+ }
+h2 {
+  margin:auto;
+  padding-top: 40px;
+  max-width: 850px;
+}
+#ws-text, #about-text, #footer-text {
+   /*background:radial-gradient(ellipse at 48% 42%, rgba(139, 176, 244, 1) 0%, rgba(139, 176, 244, 1) 50%, rgba(100, 148, 237, 1) 100%);*/
+  margin:auto;
+   margin-top:50px;
+ max-width:880px;
+  padding-bottom:40px;
+}
+#about-text {
+      margin-top:10px;
+}
+#about-section {
+  padding: 0px;
+  /*background-color: transparent;*/
+  margin-bottom: 0;
+  height:100vh;
+  text-align: center;
+}
+#about-heading {
+  margin-top:10px;
+}
+#about-para {
+  padding:10px 20px;
+}
+
+/*My Profile*/
+#profile-section {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+/*ANGLE-1*/
+#my-angle1 {
+  position: relative;
+  padding: 0px 0 0px;
+  z-index:1;
+  /* background: #0e2f40; */
+}
+.corner {
+      fill: turquoise;
+    }
+#projects {
+  position:relative;
+  background-color:turquoise;
+  margin-top:0px;
+  width:100%;
+  padding-top: 0px;
+}
+
+#hex-box {
+  margin: 0px auto;
+  padding-top:40px;
+  padding-bottom:20px;
+  width:100%;
+  z-index:10;
+}
+#pro-heading {
+   margin-bottom: 30px;
+}
+i#icon1 {
+  position: relative;
+  float:left;
+  margin-left: 10px;
+  top: 70px;
+}
+i#icon2 {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  top:70px;
+}
+
+.project-about {
+  margin: 30px auto 0 auto;
+  padding:0 20px;
+  width:100%;
+  height:420px;
+}
+
+#para-link {
+  text-align: left;
+}
+#page-para {
+  padding-top: 20px;
+}
+/*ANGLES-2*/
+#my-angle2 {
+   position: relative;
+  padding: 0px 0 0px;
+  z-index:1;
+  /* background: #0e2f40; */
+ 
+}  
+#footer {
+  width:100%;
+  
+  margin-top:0px;
+  padding-top: 50px;
+}
+#footer-text {
+  padding-top:20px;
+  padding-bottom:30px;
+  margin-bottom:150px;
+}
+#lets {
+  padding: 20px;
+  padding-bottom:40px;
+}
+#em, #tel {
+  padding: 20px;
+text-transform:none;
+}
+#by {
+  padding-top:10px;
+  padding-bottom:10px;
+  text-transform:none;
+}
+@media only screen and (min-width: 400px) {
+  .project-about {
+  height:350px;
+     padding:0 20px;
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /*FONTS CLOCK*/
+    #clock {
+      display: grid;
+      grid-template-columns: 50px 50px 50px 50px 50px 50px;
+      justify-content: center;
+      grid-gap: 15px;
+    }
+    /*CLOCK ICONS*/
+    i#icon {
+      font-size: 4rem;
+    }
+    h1 {
+      
+      padding-top: 50px;
+      font-size:3.5rem;
+    }
+  h2, h3, #links {
+  font-size:2.2rem;
+}
+  h2#top-heading, h2#top-heading2, h2#about-heading, h3#lets {
+  letter-spacing: 10px;
+  
+}
+  span#email-text, h3#by {
+  font-size:1.5rem;
+}
+   
+    #lets, #em, #tel {
+      padding: 20px;
+      font-size:2rem;
+    }
+    #about-para, #page-para {
+      font-size:2rem;
+    }
+   
+    #page-para {
+       padding-top: 20px;
+     }
+   .project-about {
+  height:340px;
+      padding:0 30px;
+}
+    i#icon1 {
+       margin-left: 50px;
+       top: 110px;
+      }
+     i#icon2 {
+       margin-right: 50px;
+       top:110px;
+     }
+    
+   
+  
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+     .my-doodle {
+    display:block;
+  }
+  #ws-text, #about-text, #footer-text {
+     background:radial-gradient(ellipse at 48% 42%, rgba(139, 176, 244, 1) 0%, rgba(139, 176, 244, 1) 50%, rgba(100, 148, 237, 1) 100%);
+  }
+  #welcome-section {
+   background:transparent;
+}
+  #ws-text {
+    margin-top:100px;
+  }
+   
+    #lets, #em, #tel {
+      padding: 20px 100px;
+      font-size:2rem;
+    }
+    #pro-heading {
+      position:relative;
+      top:-15px;
+      margin-bottom: 20px;
+    }
+    #hex-box {
+      position:relative;
+      top:-15px;
+      right:20px;
+      padding-top:0px;
+      grid-area: hex-box;
+    }
+  #page-para {
+       padding-top: 10px;
+     }
+   
+
+    .project-about {
+      margin-top:5px;
+      height:320px;
+      grid-area: about-box;
+    }
+    i#icon1 {
+      margin-left: 0px;
+    }
+    i#icon2 {
+      margin-right: 0px;
+    }
+    
+  #profile-section {
+  
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+#about-text {
+      margin-top:50px;
+}
+ #about-para {
+      font-size:2rem;
+    }
+ #page-para, a#links {
+      font-size:2rem;
+    }
+  
+    #projects {
+         margin-top:0px; 
+        width: 100%;
+      padding-top:0px;
+     /*background-color:blue;*/
+      /*-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
+        height: 320px;
+     
+        display: grid;
+        justify-content: center;
+        
+        
+        grid-template-columns: 600px 360px;
+        grid-gap: 10px;
+        grid-template-areas:
+        "about-box hex-box";
+    }
+  span#email-text {
+  letter-spacing: 10px;
+}
+}
+@media only screen and (min-width: 1200px) {
+     
+    #projects {
+      
+      grid-template-columns: 600px 420px;
+       grid-gap: 20px;
+    }
+   
+  
+}
+ 

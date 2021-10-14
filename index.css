@@ -57,20 +57,20 @@ body {
   --rule1: (
         @grid: 5 / 100vmax;
      @nth(3, 6n) {
-   background: url("https://assets.codepen.io/5499329/ghost.svg");
+   background: url("FA-icons/ghost.svg");
 }
    
     @nth(6n + 1) {
-  background: url("https://assets.codepen.io/5499329/book-dead-solid.svg");
+  background: url("FA-icons/book-dead-solid.svg");
 }
   @nth(11, 6n + 2) {
-  background: url("https://assets.codepen.io/5499329/meteor-solid.svg");
+  background: url("FA-icons/meteor-solid.svg");
 }
   @nth(15, 6n + 4) {
-  background: url("https://assets.codepen.io/5499329/pastafarianism-solid.svg");
+  background: url("FA-icons/pastafarianism-solid.svg");
 }
   @nth(5, 9, 17, 21, 23) {
-  background: url("https://assets.codepen.io/5499329/yin-yang-solid.svg");
+  background: url("FA-icons/yin-yang-solid.svg");
 }
     background-size: cover;
      @size: @r(4vmax, 5vmax);

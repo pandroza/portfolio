@@ -1,6 +1,6 @@
 # My Portfolio webpage
 
-### Built using HTML, CSS, JAVASCRIPT, BOOTSTRAP, [CSS-DOODLE](https://css-doodle.com/), [HEXAFLIP](https://github.com/dmotz/hexaflip) plugin and [FONT AWESOME](https://fontawesome.com/) icons.
+Built using HTML, CSS, JAVASCRIPT, BOOTSTRAP, [CSS-DOODLE](https://css-doodle.com/), [HEXAFLIP](https://github.com/dmotz/hexaflip) plugin and [FONT AWESOME](https://fontawesome.com/) icons.
 
 
 ![My Portfolio site](./hex-pics/thispage.png)

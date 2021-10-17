@@ -1,6 +1,6 @@
 # My Portfolio webpage
 
-Built using HTML, CSS, JAVASCRIPT, BOOTSTRAP, CSS-DOODLE, HEXAFLIP plugin and FONT AWESOME icons.
+Built using HTML, CSS, JAVASCRIPT, BOOTSTRAP, [CSS-DOODLE](https://css-doodle.com/), [HEXAFLIP](https://github.com/dmotz/hexaflip) plugin and FONT AWESOME icons.
 
 Has a nav-bar built with BootStrap which shrinks to burger menu for small screens.
 

@@ -6,7 +6,7 @@ Has a nav-bar built with BootStrap which shrinks to burger menu for small screen
 
 On large screens has background created with CSS-DOODLE of FA icon SVG's that fade in and out and move in random directions.
 
-Site consists of four sections:
+### Site consists of four sections:
 
 1: Header containing site name and headings about me. Under the site name is a HH/MM/SS clock with FA icons instead of numbers, built in JS. Unlike CSS-Doodle background icons, these are added with HTML *<a*> elements, not SVG's. 
 
